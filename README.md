@@ -25,7 +25,7 @@ commitly --preview
 To configure the `.gitconfig` file with the API key, add the following section to your `.gitconfig` file:
 
 ```ini
-[aiCommit]
+[commitly]
     apiKey = YOUR_API_KEY_HERE
 ```
 
@@ -44,8 +44,18 @@ Replace `YOUR_API_KEY_HERE` with your actual API key.
 Here are some examples of how to use the `commitly` command:
 
 ```sh
-# Generate a commit message using the AI service
+# Generate a commit using the AI service
 commitly
+```
+
+```sh
+# Preview a commit using the AI service, then commit it
+commitly --preview
+```
+
+```sh
+# Generate maximum 2 commits using the AI service
+commitly --max 2
 ```
 
 ## Config Command
